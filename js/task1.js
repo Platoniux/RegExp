@@ -1,9 +1,9 @@
 ;(function() {
   'use strict';
 
-  const time = /[012][0-9]:[0-5][0-9]/;
+  const time = /([01][0-9]|2[0-3]):[0-5][0-9]/;
 
-  const testTime = ['Breakfast at 07:30', 'Dinner at 45:94. WTF? 0_o'];
+  const testTime = ['Breakfast at 07:30', 'Dinner at 45:94. WTF? 0_o', '26:49'];
 
   testingRegExp(time, testTime);
 
